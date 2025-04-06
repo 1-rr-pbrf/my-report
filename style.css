@@ -132,3 +132,14 @@ body {
     font-size: 18px;
     margin-top: 40px;
   }
+
+.intro-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #333;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
