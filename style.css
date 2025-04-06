@@ -1,0 +1,134 @@
+body {
+    background-color: #dcd0b4;
+    font-family: 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', '游明朝体', 'Yu Mincho', 'MS 明朝', serif;
+    margin: 0;
+    padding: 40px;
+    color: #111;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px #fff;
+  }
+  
+  .report-box {
+    background-color: #fefefe;
+    border: 2px solid #333;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 794px;
+    min-height: 1123px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+  
+  .annotation-box {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    position: absolute;
+  }
+  
+  .annotation-box::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background: #333;
+  }
+  
+  .image-annotation {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  
+  .image-annotation img,
+  .image-annotation video {
+    width: 300px;
+    height: auto;
+    border: 2px solid #333;
+    display: block;
+  }
+  
+  /* 最初の画像の注釈ボックス */
+  .box1 {
+    top: 0;
+    left: 360px;
+  }
+  
+  .box2 {
+    top: 100px;
+    left: 360px;
+  }
+  
+  /* 2つ目以降の画像と注釈 */
+  .image-annotation.second {
+    margin-top: 130px;
+  }
+  
+  .image-annotation.second img,
+  .image-annotation.second video {
+    width: 450px;
+    height: auto;
+  }
+  
+  .box4 {
+    top: 30px;
+    left: 520px;
+  }
+  
+  .box4::before {
+    top: 15px;
+    left: -20px;
+    width: 20px;
+  }
+  
+  .box5 {
+    top: 200px;
+    left: 520px;
+  }
+  
+  .box5::before {
+    top: 15px;
+    left: -20px;
+    width: 20px;
+  }
+  /* 既存のCSSに以下を追加 */
+.box6 {
+    top: 350px; /* box5の下に配置 */
+    left: 520px;
+  }
+  
+  .box6::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+  }
+  .footer {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 40px;
+  }
